@@ -1,0 +1,54 @@
+body{
+    background-color:black;
+    color: wheat;
+    font-size: 22px;
+}
+
+#container{
+    width: 100%;
+    margin: 20px auto;
+    display: grid;
+    text-align: center;
+    
+    grid-template-areas: "nav  info info info"
+                         ". projects projects projects"
+                         ".  contact contact contact"
+                         "footer footer footer footer";
+}
+
+#navigation{
+    width: 100%;
+    grid-area: nav;
+    background-color: darkred;
+}
+#aboutMe{
+    width: 100%;
+    grid-area: info;
+    justify-self: center;
+}
+#projects{
+    width: 100%;
+    grid-area: projects;
+    justify-self: center;
+}
+#iframesContainer{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 100px;
+}
+#contact{
+    width: 100%;
+    grid-area: contact;
+    justify-self: center;
+}
+footer{
+    grid-area: footer;
+}
+
+
+
+
+.testBorder{
+    border: 1px solid red;
+}
