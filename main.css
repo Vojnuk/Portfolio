@@ -1,0 +1,17 @@
+* {
+    box-sizing: content-box;
+}
+
+body{
+    background-color: black;
+    color: wheat;
+    font-size: 22px;
+}
+
+.testBorder{
+    border: 1px solid red;
+}
+
+#navigation{
+    
+}
