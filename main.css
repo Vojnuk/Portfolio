@@ -1,6 +1,10 @@
 * {
-    box-sizing: content-box;
+    box-sizing: border-box;
 }
+html, body {
+    margin: 0;
+    height: 100%;
+ }
 
 body{
     background-color: black;
@@ -13,5 +17,21 @@ body{
 }
 
 #navigation{
-    
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+
+#container{
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+main{
+    margin:auto;
+}
+#navigation{
+    height: 100vh; /* see something more responsive */
+}
+    
