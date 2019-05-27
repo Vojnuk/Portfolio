@@ -6,32 +6,47 @@ html, body {
     height: 100%;
  }
 
+h2{  
+    margin: auto; /*don't work*/
+ }
+
 body{
     background-color: black;
     color: wheat;
     font-size: 22px;
 }
 
-.testBorder{
-    border: 1px solid red;
-}
-
 #navigation{
+    height: 100vh; 
     margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+#navigation > * {
+    padding-bottom: 50px;
+    text-decoration: none;
+}
 
 #container{
     display: grid;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 20% 60% 20%;
 }
 
 main{
-    margin:auto;
+    margin: auto;
 }
-#navigation{
-    height: 100vh; /* see something more responsive */
+
+#iframesContainer{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 10px;
 }
-    
+
+
+
+
+/* for development */
+.testBorder{
+    border: 1px solid red;
+}
