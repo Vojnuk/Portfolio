@@ -6,8 +6,9 @@ html, body {
     height: 100%;
  }
 
-h2{  
-    margin: auto; /*don't work*/
+h2{
+    text-align: center;  
+    margin: 50px auto; 
  }
 
 body{
@@ -18,10 +19,11 @@ body{
 
 #navigation{
     height: 100vh; 
-    margin: auto;
+    margin-left: auto;
+    margin-right: 50px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
 }
 #navigation > * {
     padding-bottom: 50px;
@@ -29,12 +31,12 @@ body{
 }
 
 #container{
-    display: grid;
-    grid-template-columns: 20% 60% 20%;
+    display: grid; 
+    grid-template-columns: 30% 40% 30%;
 }
 
 main{
-    margin: auto;
+    margin: 100px auto;
 }
 
 #iframesContainer{
