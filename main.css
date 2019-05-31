@@ -17,6 +17,8 @@ body{
     font-size: 22px;
 }
 
+/*  Navigation*/
+
 #navigation{
     height: 100vh; 
     margin-left: auto;
@@ -24,10 +26,17 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+
 }
 #navigation > * {
-    padding-bottom: 50px;
+    margin-bottom: 50px;
     text-decoration: none;
+    
+}
+#navigation a:hover{
+    padding-bottom:5px;
+    /*border-bottom: 1px solid wheat;*/
+    text-decoration: underline; /*vidi kako da resis problem guranja na dole kad se pojavi underline*/
 }
 
 #container{
@@ -43,6 +52,32 @@ main{
     display: grid;
     grid-template-columns: 50% 50%;
     gap: 10px;
+}
+
+/*  Contact page  */
+#contactForm input[type="text"],
+#contactForm input[type="email"],
+#contactForm textarea{
+    display: block;
+    width: 100%;
+    background-color: antiquewhite;
+    font-size: 0.9em;
+    padding: 0.3em;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+#contactForm textarea{
+    height: 200px;
+    width: 500px;
+}
+
+#contactForm button{
+    background-color: black;
+    color: wheat;
+    border: 1px solid wheat;
+    border-radius: 10%;
+    padding: 1em;
 }
 
 
