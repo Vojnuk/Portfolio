@@ -1,10 +1,6 @@
 * {
     box-sizing: border-box;
 }
-html, body {
-    margin: 0;
-    height: 100%;
- }
 
 h2{
     text-align: center;  
@@ -12,12 +8,13 @@ h2{
  }
 
 body{
+    margin: 0;
     background-color: black;
     color: wheat;
     font-size: 22px;
 }
 
-/*  Navigation*/
+/*  Navigation */
 
 #navigation{
     height: 100vh; 
@@ -26,7 +23,6 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-
 }
 #navigation > * {
     margin-bottom: 50px;
@@ -34,11 +30,10 @@ body{
     
 }
 #navigation a:hover{
-    padding-bottom:5px;
-    /*border-bottom: 1px solid wheat;*/
-    text-decoration: underline; /*vidi kako da resis problem guranja na dole kad se pojavi underline*/
+    text-decoration: underline; 
 }
 
+/*treca kolona smeta u responsive*/
 #container{
     display: grid; 
     grid-template-columns: 30% 40% 30%;
@@ -48,15 +43,21 @@ main{
     margin: 100px auto;
 }
 
-#iframesContainer{
+
+/* Projects page */
+#imageContainer{
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns:  33% 33% 33%;
     gap: 10px;
 }
 
+#imageContainer img{
+    height: 100px;/*? kako postaviti aspekt slike 4:3, 3:2 ... */
+    width: 200px;
+}
+
 /*  Contact page  */
-#contactForm input[type="text"],
-#contactForm input[type="email"],
+#contactForm input,
 #contactForm textarea{
     display: block;
     width: 100%;
@@ -69,7 +70,7 @@ main{
 
 #contactForm textarea{
     height: 200px;
-    width: 500px;
+    width: 400px;
 }
 
 #contactForm button{
