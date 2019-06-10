@@ -1,15 +1,23 @@
 window.addEventListener('load', ()=>{
 
-const button = document.getElementById('testButton');
-button.addEventListener('click', ()=>{
+const nav = document.getElementById('navigation');
+nav.addEventListener('mouseenter', ()=>{
     let elems = document.body.getElementsByTagName('*');
     elems = Array.from(elems);
     elems.forEach( elem => {
-        elem.classList.toggle('testBorder');
+        elem.classList.add('testBorder');
     });
     
 })
 
+nav.addEventListener('mouseleave', ()=>{
+    let elems = document.body.getElementsByTagName('*');
+    elems = Array.from(elems);
+    elems.forEach( elem => {
+        elem.classList.remove('testBorder');
+    });
+    
+})
 
 
 

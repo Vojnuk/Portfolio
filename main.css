@@ -1,10 +1,8 @@
 /*
-1. ubaci reset ovde !!!!
-2. prebaci sve px vrednosti u % po formuli "target / context = result"
-    Znaci ako je sirina textfield 400px ali je sirina njegovog konteksta
-    tj. parenta 960px onda je 
-    rezultat = 0.4166666666666667 odnosno 41.66666666666667 %,
-    i da, svi brojevi iza decimale se pisu
+1.proveri u ostalim pretrazivacima kako radi
+2. mozda ubaci reset ovde !!!!
+3. mozda odradi neki transform on hover za slike u projects page
+4. nadji neko resenje za veliscinu slike od 1000px pa nanize
 */
 
 * {
@@ -26,9 +24,8 @@ body{
 /*  Navigation */
 
 #navigation{
-    height: 100vh; 
     margin-left: auto;
-    margin-right: 50px;
+    margin-right: 20px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -36,13 +33,15 @@ body{
 #navigation > * {
     margin-bottom: 50px;
     text-decoration: none;
-    
+}
+#navigation:first-child{
+    padding-top: 50px;
 }
 #navigation a:hover{
     text-decoration: underline; 
 }
 
-/*treca kolona smeta u responsive*/
+/* Main content in every page */
 #container{
     display: grid; 
     grid-template-columns: 30% 40% 30%;
@@ -50,11 +49,19 @@ body{
 
 main{
     margin: 100px auto;
+    padding: 20px;
 }
 
+/* About Me page*/
+
+#aboutMe ul::first-line{
+    font-weight: bold;
+    line-height: 3em; 
+}
 
 /* Projects page */
 #imageContainer{
+    min-width: 300px;
     display: grid;
     grid-template-columns:  33% 33% 33%;
     gap: 10px;
@@ -62,7 +69,7 @@ main{
 
 #imageContainer img{
     max-width: 100%;
-    
+    margin: auto;
 }
 
 /*  Contact page  */
@@ -90,28 +97,40 @@ main{
     padding: 1em;
 }
 
-/* Responsive pages*/
+/* RESPONSIVE */
 
 @media screen and (max-width: 768px){
+    h2{
+        margin-top: 0px;
+    }
+
     #container{
         display: flex;
         flex-direction: column;
-        
     }
+    /*navigation*/
     #navigation{
         height: 100%;
         display: flex;
         flex-direction: row;
-        justify-content: justify;
         margin: auto;
     }
     #navigation > * {
-        padding: 10px 20px 20px 10px;
-        margin-bottom: 10px;
+        padding: 30px 20px 0px 10px;
+        margin-bottom: 20px;
     }
-
-    h2{
-        margin-top: 10px;
+    /*projects*/
+    #imageContainer{
+        width: auto;
+        grid-template-columns: 100%;
+    }
+    #imageContainer img{
+        max-width: 300px;
+    }
+    /*contact*/
+    #contactForm textarea{
+        height: 200px;
+        width: 300px;
     }
 }
 
@@ -120,3 +139,4 @@ main{
 .testBorder{
     border: 1px solid red;
 }
+
