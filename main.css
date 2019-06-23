@@ -7,6 +7,9 @@ h2{
     text-align: center;  
     margin: 50px auto; 
  }
+h3{
+    font-size: 1em;
+}
 
 body{
     margin: 0;
@@ -65,11 +68,6 @@ main{
     padding: 20px;
 }
 
-/* About Me page*/
-#aboutMe ul::first-line{
-    font-weight: bold;
-    line-height: 3em; 
-}
 
 /* Projects page */
 #imageContainer{
@@ -103,6 +101,7 @@ main{
     height: 200px;
     width: 400px;
     margin: 10px auto 40px auto;
+    resize: none;
 }
 
 #contactForm button{
@@ -112,11 +111,17 @@ main{
     border-radius: 10%;
     padding: 1em;
 }
-
+.honeypot-field {
+    display: none;
+  }
+.thankyou_message{
+display: none; 
+margin-top: 200px;
+}
 /*IE10-11 fix*/
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     #navigation{
-        margin-left: 50%; /* was "auto" */
+        margin-left: 50%;
         }
     }
 
@@ -155,6 +160,9 @@ main{
     #contactForm textarea{
         height: 200px;
         width: 300px;
+    }
+    .thankyou_message{
+        margin-top: 0;
     }
 }
 
