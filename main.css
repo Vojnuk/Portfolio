@@ -9,6 +9,8 @@ h2{
  }
 h3{
     font-size: 1em;
+    text-align: center;
+    padding: 5px;
 }
 
 body{
@@ -17,6 +19,7 @@ body{
     color: wheat;
     font-size: 22px;
 }
+
 
 /*  Navigation */
 
@@ -73,18 +76,32 @@ main{
 #imageContainer{
     display: -ms-grid;
     -ms-grid-columns: 33% 33% 33%;
-    -ms-grid-gap: 10px;
+    -ms-grid-gap: 20px;
 
     min-width: 300px;
     display: grid;
     grid-template-columns:  33% 33% 33%;
-    gap: 10px;
+    gap: 20px;
 }
 
 #imageContainer img{
     max-width: 100%;
     margin: auto;
 }
+#imageContainer a{
+    text-decoration: none;
+    color: wheat;
+}
+
+.border{
+    border: 1px solid #383838;
+}
+/*
+#under-construction:hover{
+    
+    filter: blur(5px);
+}
+*/
 
 /*  Contact page  */
 #contactForm input,
