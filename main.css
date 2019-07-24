@@ -99,7 +99,7 @@ main{
     border: 1px solid #383838;
 }
 #imageContainer > *:hover{
-    border: 2px solid #5F5F5F;
+    border: 2px solid lightyellow;
 }
 
 /*  Contact page  */
