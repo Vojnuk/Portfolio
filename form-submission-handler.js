@@ -1,5 +1,8 @@
-//https://github.com/dwyl/learn-to-send-email-via-google-script-html-no-server#how
-
+/* 
+* This code was taken from:
+*https://github.com/dwyl/learn-to-send-email-via-google-script-html-no-server#how
+* according to GNU General Public License v2.0
+*/
 (function() {
 
     function validateHuman(honeypot) {
