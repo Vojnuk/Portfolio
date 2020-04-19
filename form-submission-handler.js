@@ -82,7 +82,7 @@
       var xhr = new XMLHttpRequest();
       xhr.open('POST', url);
       // xhr.withCredentials = true;
-      xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded","Access-Control-Allow-Origin:https://vojnuk.github.io");
+      xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
       xhr.onreadystatechange = function() {
           //console.log(xhr.status, xhr.statusText);
           //console.log(xhr.responseText);
