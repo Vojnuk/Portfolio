@@ -112,6 +112,13 @@ main{
     border: 2px solid lightyellow;
 }
 
+
+#under-construction{
+    /* DEV */
+    /* skrivamo element dok ne resimo backend */
+    display: none;
+}
+
 /*  Contact page  */
 #contactForm input,
 #contactForm textarea{
@@ -180,14 +187,6 @@ margin-top: 200px;
         grid-template-columns: 100%;
         max-width: 300px;
     }
-    
-    #under-construction{
-    /* DEV */
-    /* skrivamo element dok ne resimo backend */
-        display: none;
-    }
-    
-    
     
     /*contact*/
     #contactForm textarea{
